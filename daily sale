@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int i;
+	double satis;
+	double toplam=0;
+	for(i=0;i<=4;i++)
+	{
+		printf("Gunluk satisi girin-> ");
+		scanf("%lf",&satis);
+		toplam=toplam+satis;
+	}
+	printf("Ortalama satis->%lf\n",toplam/5);
+	printf("Toplam satis->%lf\n",toplam);
+	if(toplam>=50000)
+	{
+		printf("Tebrikler prim almaya hak kazandiniz.");
+	}
+	else
+	{
+		printf("Hedefin altinda kaldi");
+	}
+	
+	return 0;
+}
